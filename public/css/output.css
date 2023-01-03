@@ -1433,8 +1433,8 @@ video {
     border-radius: 0px;
   }
 
-  .lg\:bg-none {
-    background-image: none;
+  .lg\:bg-transparent {
+    background-color: transparent;
   }
 
   .lg\:pt-10 {
