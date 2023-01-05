@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="public\css\output.css">
     <!-- javaScript -->
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    
 </head>
 
 <body class="font-base selection:bg-pink-200  dark:bg-slate-900">
@@ -29,7 +30,7 @@
                         <span class="hamburger-line transition duration-300 ease-in-out"></span> 
                         <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span> 
                     </button>
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:rounded-none lg:dark:text-white ">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="#home" class="text-base text-dark py-2 mx-8 group-hover:text-primary2 flex">Beranda</a>
@@ -48,6 +49,19 @@
                             </li>
                             <li class="group">
                                 <a href="#contact" class="text-base text-dark py-2 mx-8 group-hover:text-primary2 flex">Contact</a>
+                            </li>
+                            <li class="flex items-center pl-8 justify-center">
+                                <div id="dark" class="flex cursor-pointer ">
+                                    <span class="mr-2 text-md text-black lg:dark:text-white">Mode </span>
+                                    <span id="terang" class="flex">
+                                        <img  src="public\svg\idea.png" alt="#" width="30">
+                                        <span class="ml-2 text-md text-slate-700 ">light</span>
+                                    </span>
+                                    <span id="gelap" class="hidden flex">
+                                        <img  src="public\svg\night-mode.png" alt="#" width="30">
+                                        <span class="ml-2 text-md text-slate-300">dark</span>
+                                    </span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -385,6 +399,13 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- Back to Top Start -->
+    <a id="toTop" href="#home" class="h-14 w-14 bg-primary rounded-full flex justify-center content-center fixed z-[9999] bottom-4 right-4 p-4 animate-bounce hidding">
+        <span class=" h-5 w-5 border-t-4 border-l-4 rotate-45 mt-1 rounded-sm "></span>
+    </a>
+    <!-- Back to Top End -->
+
+    <!-- javaScript -->
     <script src="public\js\script.js"></script>
     
 </body>
