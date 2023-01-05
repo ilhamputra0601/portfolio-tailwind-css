@@ -24,7 +24,7 @@ const hamburger = $('#hamburger');
 const navMenu = $('#nav-menu') 
   $(hamburger).click(function (e) {
     $(hamburger).toggleClass("hamburger-active");
-    $(navMenu).toggleClass("hidden");
+    $(navMenu).slideToggle("slow");
     e.preventDefault();
   });
 // Hamburger close belum di buat
