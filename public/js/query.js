@@ -26,8 +26,13 @@ $(document).ready(function () {
     $(navMenu).slideToggle('slow');
     e.preventDefault();
   });
-  // Hamburger close offside belum di buat
-
+  // Hamburger close 
+  $(document).click(function(e) {
+    if (!$(e.target).closest('#hamburger, #nav-menu').length) {
+        $(hamburger).removeClass('hamburger-active');
+        $(navMenu).slideUp('slow');
+    }
+});
   // darkmode
   const dark = $('#dark');
   $(dark).click(function (e) {
